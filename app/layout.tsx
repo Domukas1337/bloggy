@@ -21,10 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} antialiased`}>
-        <div>
+        <div className="flex flex-col justify-center h-screen gap-10">
           <Navbar />
+          <div className="mb-10">{children}</div>
         </div>
-        {children}
       </body>
     </html>
   );
