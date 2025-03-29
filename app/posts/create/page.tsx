@@ -1,7 +1,5 @@
-export default function CreatePost() {
-  return (
-    <main className="flex flex-col items-center justify-center gap-7">
-      <h1 className="text-3xl md:text-6xl font-bold">Create a post</h1>
-    </main>
-  );
+import BlogForm from "@/components/BlogForm";
+
+export default function Page() {
+  return <BlogForm />;
 }
