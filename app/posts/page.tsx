@@ -10,6 +10,7 @@ export default async function Page() {
       <div>
         <p className="text-xl md:text-2xl">Number of posts: {data.length}</p>
       </div>
+      {data.length === 0 && <p className="text-xl md:text-2xl">No posts</p>}
       {data.map((blog) => (
         <Blog key={blog.id} bloggy={blog} />
       ))}

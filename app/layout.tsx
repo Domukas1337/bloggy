@@ -21,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} antialiased`}>
-        <div className="flex flex-col justify-center h-screen">
+        <div className="flex flex-col justify-center h-screen w-screen">
           <Navbar />
-          <div className="overflow-auto">{children}</div>
+          <div className="overflow-auto mx-2 md:mx-0">{children}</div>
         </div>
       </body>
     </html>

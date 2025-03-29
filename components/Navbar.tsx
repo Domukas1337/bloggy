@@ -24,16 +24,7 @@ export default function Navbar() {
               : `hover:text-blue-500 transition-colors`
           }
         >
-          <Link href="/posts">All Posts</Link>
-        </li>
-        <li
-          className={
-            pathname === "/posts/create"
-              ? "text-blue-500"
-              : `hover:text-blue-500 transition-colors`
-          }
-        >
-          <Link href="/posts/create">Create Post</Link>
+          <Link href="/posts">Posts</Link>
         </li>
       </ul>
     </div>

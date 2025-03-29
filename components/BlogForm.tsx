@@ -35,6 +35,7 @@ export default function BlogForm() {
             type="text"
             id="title"
             name="title"
+            required
             placeholder="My beautiful dark"
             className="px-5 py-3 border border-gray-300"
           />
@@ -44,6 +45,7 @@ export default function BlogForm() {
           <textarea
             name="blog"
             id="blog"
+            required
             className="px-5 py-3 border border-gray-300 w-full resize-none"
             value={blogText}
             onChange={(e) => setBlogText(e.target.value)}
