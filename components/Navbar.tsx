@@ -6,7 +6,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-2 mb-4">
       <ul className="flex flex-row gap-10 text-lg">
         <li
           className={
