@@ -5,7 +5,7 @@ export default function Blog({ bloggy }) {
   const time = fullDate[1].split(".")[0];
 
   return (
-    <main className="flex flex-col items-center justify-center gap-7 border p-4 w-full md:w-1/2 ">
+    <main className="flex flex-col items-center justify-center gap-7 border p-4 w-full md:w-2/3 ">
       <div className="flex flex-col gap-2 text-center">
         <p className="text-xl md:text-2xl">author: {author}</p>
         <p className="text-md">id: {id}</p>

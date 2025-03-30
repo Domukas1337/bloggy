@@ -2,12 +2,28 @@
 
 import { createBlog } from "@/lib/actions";
 import { useState } from "react";
+import { useFormStatus } from "react-dom";
+
+function Button({ children }: { children: React.ReactNode }) {
+  const { pending } = useFormStatus();
+  return (
+    <button
+      type="submit"
+      disabled={pending}
+      className="px-5 py-3 bg-green-600 text-gray-800 hover:bg-green-500 transition-colors"
+    >
+      {pending ? "Submitting..." : children}
+    </button>
+  );
+}
 
 export default function BlogForm() {
   const [blogText, setBlogText] = useState("");
+
   function resetForm() {
     setBlogText("");
   }
+
   return (
     <main className="flex flex-col items-center justify-center gap-7 text-center">
       <h1 className="text-3xl md:text-6xl font-bold">Create a post</h1>
@@ -68,12 +84,7 @@ export default function BlogForm() {
             You have exceeded the character limit
           </p>
         ) : (
-          <button
-            type="submit"
-            className="bg-gray-700 p-4 hover:bg-gray-600 transition-colors"
-          >
-            Submit
-          </button>
+          <Button>Submit</Button>
         )}
       </form>
     </main>
