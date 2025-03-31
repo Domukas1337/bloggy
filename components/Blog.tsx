@@ -1,4 +1,14 @@
-export default function Blog({ bloggy }) {
+export default function Blog({
+  bloggy,
+}: {
+  bloggy: {
+    author: string;
+    blog: string;
+    id: string;
+    created_at: string;
+    title: string;
+  };
+}) {
   const { author, blog, id, created_at, title } = bloggy;
 
   const fullDate = created_at.split("T");
