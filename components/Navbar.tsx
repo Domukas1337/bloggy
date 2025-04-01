@@ -11,8 +11,8 @@ export default function Navbar() {
         <li
           className={
             pathname === "/"
-              ? "text-blue-500"
-              : `hover:text-blue-500 transition-colors`
+              ? "text-blue-500 border p-2 px-4"
+              : `hover:text-blue-500 transition-colors border p-2 px-4`
           }
         >
           <Link href="/">Home</Link>
@@ -20,8 +20,8 @@ export default function Navbar() {
         <li
           className={
             pathname === "/posts"
-              ? "text-blue-500"
-              : `hover:text-blue-500 transition-colors`
+              ? "text-blue-500 border p-2 px-4"
+              : `hover:text-blue-500 transition-colors border p-2 px-4`
           }
         >
           <Link href="/posts">Posts</Link>
