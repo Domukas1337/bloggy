@@ -1,5 +1,6 @@
 "use server";
 
+import { redirect } from "next/navigation";
 import { supabase } from "./supabase";
 
 export async function createBlog(formData) {
@@ -11,6 +12,8 @@ export async function createBlog(formData) {
   const { error } = await supabase.from("bloggy").insert([newBlog]);
 
   if (error) {
-    throw new Error("Something went wrong :(", { cause: error });
+    throw new Error("Something went wrong :(", error);
   }
+
+  redirect("/posts");
 }
