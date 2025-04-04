@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center gap-7">
+    <main className="flex flex-col items-center justify-center gap-7 fadein">
       <h1 className="text-3xl md:text-6xl font-bold">Welcome to Bloggy</h1>
       <p className="text-xl md:text-2xl">
         Blog posts without a need to sign up.
