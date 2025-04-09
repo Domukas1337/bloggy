@@ -20,8 +20,8 @@ export default function Blog({
         <p className="text-xl md:text-2xl">author: {author}</p>
         <p className="text-md">id: {id}</p>
       </div>
-      <h1 className="text-lg font-bold">{title}</h1>
-      <p className="text-sm md:text-md font-bold">{blog}</p>
+      <h1 className="text-2xl font-bold uppercase">{title}</h1>
+      <p className="text-sm md:text-md font-bold whitespace-pre-line">{blog}</p>
       <div className="flex flex-row gap-2">
         <p className="text-sm">{fullDate[0]}</p>
         <p className="text-sm">{time}</p>
